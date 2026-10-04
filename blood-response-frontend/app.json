@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Blood Response System",
+    "slug": "blood-response-system",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/alkhidmat-logo.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/alkhidmat-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0057A0"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to find urgent blood donation requests and donors near you."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/alkhidmat-logo.png",
+        "backgroundColor": "#0057A0"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Blood Response to find compatible blood requests and donors near your hospital or residence."
+        }
+      ],
+      "expo-asset"
+    ],
+    "scheme": "bloodresponse"
+  }
+}
